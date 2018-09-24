@@ -49,3 +49,28 @@ function Story(props) {
   return <SpecificStory story={props.story} />;
 }
 ```
+
+## JSX指定属性的几种方式
+- javascript表达式
+```js
+<MyComponent foo={1 + 2 + 3 + 4} />
+```
+- 字符串常量
+```js
+<MyComponent message="hello world" />
+
+<MyComponent message={'hello world'} />
+```
+- 默认为true
+```js
+<MyTextBox autocomplete />
+<MyTextBox autocomplete={true} />
+```
+- 扩展属性
+  - 会导致很多不相关的属性传递到组件中
+```js
+function App2() {
+  const props = {firstName: 'Ben', lastName: 'Hector'};
+  return <Greeting {...props} />;
+}
+```
