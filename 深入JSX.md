@@ -74,3 +74,12 @@ function App2() {
   return <Greeting {...props} />;
 }
 ```
+
+## 子代
+- JSX标签之间的内容通过props.children来传递
+- 子代的几种类型：
+  - 字符串常量
+  - JSX
+  - JavaScript表达式
+  - 函数
+  - 布尔值、null、undefined被忽略
