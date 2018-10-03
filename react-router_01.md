@@ -28,3 +28,19 @@ const extraProps = { color: 'red' }
     : <EmptyPage {...props}/>
 )}/>
 ```
+
+Path params
+- 产生一个包含参数和参数值的对象
+- 对象值是字符串类型
+
+Link
+- to参数可以接受字符串或者一个对象
+- 对象拥有的属性：pathname / search / hash / state
+- pathname must be absolute
+```js
+// a basic location object
+{ pathname: '/', search: '', hash: '', key: 'abc123' state: {} }
+```
+
+pathless Route
+- match every location
